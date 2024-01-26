@@ -24,7 +24,7 @@ app = FastAPI()
 # app.include_router(admin.router)
 
 # MongoDB connection details
-MONGO_DETAILS = "mongodb+srv://jafar:4206lEk92mPLChBr@e-commerce.xxqjdba.mongodb.net/"  # Replace with your connection string
+MONGO_DETAILS = "mongodb+srv://jafar:<password>@e-commerce.xxqjdba.mongodb.net/"  # Replace with your connection string
 client = AsyncIOMotorClient(MONGO_DETAILS)
 db = client.db  # reference to database db
 products_collection = db.products
